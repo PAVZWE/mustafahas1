@@ -1,0 +1,184 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    background-color: #e0f7fa; /* لون خلفية فاتح ومريح */
+    color: #333;
+    line-height: 1.6;
+    text-align: right; /* محاذاة النص لليمين للغة العربية */
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.controls {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.controls button, .post button {
+    background-color: #28a745; /* زر أخضر جذاب */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.controls button:hover, .post button:hover {
+    background-color: #218838;
+}
+
+.post {
+    background-color: #ffffff;
+    border: 1px solid #cceeff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    animation: fadeIn 0.8s ease-out;
+}
+
+.post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.post p {
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+.post .caption {
+    font-style: italic;
+    color: #555;
+}
+
+.like-button {
+    background-color: #007bff; /* زر أزرق لللايك */
+}
+
+.like-button:hover {
+    background-color: #0056b3;
+}
+
+.comment-input {
+    width: calc(100% - 100px); /* حجم مناسب لحقل الإدخال */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #a0d9f4;
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+.comment-button {
+    background-color: #6c757d; /* زر رمادي للتعليق */
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.comment-button:hover {
+    background-color: #5a6268;
+}
+
+.comment-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    border-top: 1px dashed #eee;
+    padding-top: 10px;
+}
+
+.comment-list li {
+    background-color: #f0f8ff; /* خلفية فاتحة للتعليقات */
+    padding: 8px 12px;
+    border-radius: 7px;
+    margin-bottom: 7px;
+    border: 1px solid #e0efff;
+    font-size: 0.95em;
+}
+
+.comment-list li strong {
+    color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: #666;
+    font-size: 0.9em;
+    border-top: 1px solid #eee;
+}
+
+/* لتنسيق نموذج إضافة منشور */
+.hidden-form {
+    display: none; /* إخفاء النموذج مبدئياً */
+    background-color: #ffffff;
+    border: 1px solid #a0d9f4;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hidden-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.hidden-form input[type="text"],
+.hidden-form textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.hidden-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.hidden-form button:last-child {
+    background-color: #dc3545; /* زر إلغاء أحمر */
+}
+.hidden-form button:last-child:hover {
+    background-color: #c82333;
+}
+
+
+/* مؤثر الظهور */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
